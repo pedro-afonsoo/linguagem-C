@@ -56,9 +56,22 @@
 			printf("Perímetro do círculo:%2.lf", perimetro);
 			printf("Área do círculo:%2.lf", area);
 }
+
+//atividade 5
+	void PagamentoLoja(){
+		double pagamento;
+		printf("Digite o valor da prestação:");
+		fflush(stdout);
+		scanf("%lf", &pagamento);
+		if(pagamento < 300)
+			printf("Voçê tem a possibilidade de efetuar o pagamento a vista ou parecelado em 2x");
+		if(pagamento >= 300)
+			printf("Voçê tem a possibilidade de efetuar o pagamento a vista ou parecelado em 3x");
+		}
 int main(){
 	MostrarParesMultiplos3();
 	CalcularSomaeMedia();
 	CalcularAreaDosComodos();
 	CalcularPerimetroeAreaCirculo();
+	PagamentoLoja();
 }
