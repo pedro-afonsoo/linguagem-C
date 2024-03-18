@@ -1,0 +1,64 @@
+#include <stdio.h>
+#include <stdlib.h>
+#include <math.h>
+//atividade 1
+	void MostrarParesMultiplos3(){
+		for (int i = 0; i <= 1000; i++){
+			if (i % 2 == 0 && i % 3 == 0){
+			}
+			printf("%d", i);
+		}
+	}
+
+//atividade 2
+	void CalcularSomaeMedia(){
+		int numero = 0;
+		int soma = 0;
+			printf("digite 10 números inteiros:\n");
+		for (int i = 0; i < 10; i++){
+			scanf("%d", &numero );
+				soma += numero;
+		double media = soma/10;
+			printf("A soma é:%d\n", soma);
+			printf("A média é:%.2lf\n", media);
+	}
+}
+
+//atividade 3
+	void CalcularAreaDosComodos(){
+		double largura, comprimento, area, areatotal;
+		for (int i = 1; i <= 4; i++){
+			printf("Digite a largura do cômodo:%d", largura);
+			scanf("%lf", &largura);
+			printf("Digite o comprimento do cômodo:%d", comprimento);
+			scanf("%lf", &comprimento);
+
+			area = largura * comprimento;
+			areatotal += area;
+
+			printf("A área do cômodo %d é:%.2lf unidades de área\n", i, area);
+		}
+			printf("A área total é:%.2lf", areatotal);
+			//area total aprecerá após terminar o loop
+}
+
+//atividade 4
+	void CalcularPerimetroeAreaCirculo(){
+		double raio, perimetro, area;
+		const double PI = 3.14;
+			printf("Digite o valor do raio do círculo:");
+			scanf("%lf", &raio);
+
+			perimetro = 2 * PI * raio;
+			area = PI * raio * raio;
+			//para colocar raio², com a biblioteca: <math.h> - pow(raio,2)
+
+			printf("Perímetro do círculo:%2.lf", perimetro);
+			printf("Área do círculo:%2.lf", area);
+}
+int main(){
+	MostrarParesMultiplos3();
+	CalcularSomaeMedia();
+	CalcularAreaDosComodos();
+	CalcularPerimetroeAreaCirculo();
+}
