@@ -72,7 +72,7 @@
 		int escolha;
 		printf("		Escolha uma forma de pagamento:\n");
 			printf("Se a forma de pagamento for Cartão de Crédito, digite: 1\nSe a forma de pagamento for Cartão de Debto, digite: 2\nSe a forma de pagamento for dinheiro, digite: 3\nOutro: 4\n");
-			bold(1);printf("Digite o número da sua escolha: ");
+			printf("Digite o número da sua escolha: ");
 			fflush(stdout);
 			scanf("%d", &escolha);
 			if (escolha == 1) {
