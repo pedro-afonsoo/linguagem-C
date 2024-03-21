@@ -111,4 +111,5 @@ int main(){
 	//CalcularPerimetroeAreaCirculo();
 	//PagamentoLoja();
 	//DinheiroFumante();
+return 0;
 }
