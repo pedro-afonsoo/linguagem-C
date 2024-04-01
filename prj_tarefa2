@@ -28,9 +28,9 @@
 	void CalcularAreaDosComodos(){
 		double largura, comprimento, area, areatotal;
 		for (int i = 1; i <= 4; i++){
-			printf("Digite a largura do cômodo:%d", largura);
+			printf("Digite a largura do cômodo:");
 			scanf("%lf", &largura);
-			printf("Digite o comprimento do cômodo:%d", comprimento);
+			printf("Digite o comprimento do cômodo:");
 			scanf("%lf", &comprimento);
 
 			area = largura * comprimento;
@@ -53,7 +53,7 @@
 			area = PI * raio * raio;
 			//para colocar raio², com a biblioteca: <math.h> - pow(raio,2)
 
-			printf("Perímetro do círculo:%2.lf", perimetro);
+			printf("Perímetro do círculo:%2.lf\n", perimetro);
 			printf("Área do círculo:%2.lf", area);
 }
 
@@ -107,20 +107,24 @@
 //atividade 7
 
 void jogobasquete(){
-	int altura, idade, sexo;
-	printf("bem vindo\npara saber se vc se encaixa no time responda as perguntas:\nqual a sua altura em cm?\n");
+	int altura, idade, sexo, peso,imc;
+	printf("bem vindo\npara saber se vc se encaixa no time responda as perguntas:\nqual a sua altura em centrimetros?\n");
 	scanf("%d",&altura);
 	printf("quantos anos vc tem?\n");
 	scanf("%d",&idade);
 	printf("qual seu sexo?\n1.masculino\n2.feminino\n");
 	scanf("%d",&sexo);
-	if(altura >= 180 && idade > 16 && sexo == 2){
+	printf("quantos kg vc pesa?\n");
+	scanf("%d",&peso);
+	imc = peso*10000 /pow(altura,2);
+	printf("seu IMC é %d\n", imc);
+	if(altura >= 180 && idade > 16 && sexo == 2 && imc <= 25){
 	printf("apto a jogar no time juvenil basquete feminino.");
 	}
-	if(altura >= 180 && idade > 16 && sexo == 1){
+	if(altura >= 180 && idade > 16 && sexo == 1 && imc <= 25){
 	printf("apto a jogar no time juvenil basquete masculino");
 	}
-	if(altura < 180 && idade <= 16){
+	if(altura < 180 && idade <= 16 && imc > 25){
 	printf("não apto");
 	}
 }
@@ -131,6 +135,6 @@ int main(){
 	//CalcularPerimetroeAreaCirculo();
 	//PagamentoLoja();
 	//DinheiroFumante();
-	//jogobasquete();
+	jogobasquete();
 return 0;
 }
