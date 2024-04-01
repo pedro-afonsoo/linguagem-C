@@ -104,6 +104,26 @@
 
     		printf("Você fumou no total %.0lf cigarros e gastou %.2lf em %.0lf anos", cigarro, dinheiro, ano);
 }
+//atividade 7
+
+void jogobasquete(){
+	int altura, idade, sexo;
+	printf("bem vindo\npara saber se vc se encaixa no time responda as perguntas:\nqual a sua altura em cm?\n");
+	scanf("%d",&altura);
+	printf("quantos anos vc tem?\n");
+	scanf("%d",&idade);
+	printf("qual seu sexo?\n1.masculino\n2.feminino\n");
+	scanf("%d",&sexo);
+	if(altura >= 180 && idade > 16 && sexo == 2){
+	printf("apto a jogar no time juvenil basquete feminino.");
+	}
+	if(altura >= 180 && idade > 16 && sexo == 1){
+	printf("apto a jogar no time juvenil basquete masculino");
+	}
+	if(altura < 180 && idade <= 16){
+	printf("não apto");
+	}
+}
 int main(){
 	//MostrarParesMultiplos3();
 	//CalcularSomaeMedia();
@@ -111,5 +131,6 @@ int main(){
 	//CalcularPerimetroeAreaCirculo();
 	//PagamentoLoja();
 	//DinheiroFumante();
+	//jogobasquete();
 return 0;
 }
