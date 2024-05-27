@@ -10,3 +10,7 @@ void CalcularSomaeMedia(){
 			printf("A média é:%.2lf\n", media);
 	}
 }
+int main(){
+CalcularSomaeMedia();
+return 0;
+}
