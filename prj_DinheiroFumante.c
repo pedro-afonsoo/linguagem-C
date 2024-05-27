@@ -15,3 +15,7 @@ void DinheiroFumante() {
 
     		printf("Você fumou no total %.0lf cigarros e gastou %.2lf em %.0lf anos", cigarro, dinheiro, ano);
 }
+int main(){
+DinheiroFumante();
+return 0;
+}
