@@ -11,3 +11,7 @@ void CalcularPerimetroeAreaCirculo(){
 			printf("Perímetro do círculo:%2.lf\n", perimetro);
 			printf("Área do círculo:%2.lf", area);
 }
+int main(){
+CalcularPerimetroeAreaCirculo();
+return 0;
+}
