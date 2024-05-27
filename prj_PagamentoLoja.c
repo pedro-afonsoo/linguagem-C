@@ -24,3 +24,7 @@ void PagamentoLoja(){
 					printf("	Você escolheu outro 4.\n");
 				}
 	}
+int main(){
+PagamentoLoja();
+return 0;
+}
