@@ -1,3 +1,6 @@
+#include <stdio.h>
+#include <stdlib.h>
+#include <math.h>
 void CalcularPerimetroeAreaCirculo(){
 		double raio, perimetro, area;
 		const double PI = 3.14;
