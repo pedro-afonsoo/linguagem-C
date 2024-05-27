@@ -14,3 +14,7 @@ void CalcularAreaDosComodos(){
 			printf("A área total é:%.2lf", areatotal);
 			//area total aprecerá após terminar o loop
 }
+int main(){
+CalcularAreaDosComodos();
+return 0;
+}
