@@ -21,6 +21,6 @@ void jogobasquete(){
 	}
 }
 int main(){
-
+jogobasquete();
 return 0;
 }
