@@ -1,3 +1,6 @@
+#include <stdio.h>
+#include <stdlib.h>
+#include <math.h>
 void CalcularSomaeMedia(){
 		int numero = 0;
 		int soma = 0;
