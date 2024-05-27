@@ -1,3 +1,6 @@
+#include <stdio.h>
+#include <stdlib.h>
+#include <math.h>
 void jogobasquete(){
 	int altura, idade, sexo, peso,imc;
 	printf("bem vindo\npara saber se vc se encaixa no time responda as perguntas:\nqual a sua altura em centrimetros?\n");
