@@ -1,3 +1,6 @@
+#include <stdio.h>
+#include <stdlib.h>
+#include <math.h>
 void DinheiroFumante() {
     	double maço, medio, ano, cigarro, dinheiro;
 
