@@ -8,3 +8,7 @@
 			printf("%d", i);
 		}
 	}
+int main(){
+MostrarParesMultiplos3();
+return 0;
+}
