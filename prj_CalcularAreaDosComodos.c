@@ -1,3 +1,6 @@
+#include <stdio.h>
+#include <stdlib.h>
+#include <math.h>
 void CalcularAreaDosComodos(){
 		double largura, comprimento, area, areatotal;
 		for (int i = 1; i <= 4; i++){
